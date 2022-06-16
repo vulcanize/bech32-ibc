@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/cosmos/cosmos-sdk/codec"
+	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
@@ -19,8 +20,8 @@ type (
 		hrpToChannelMapper     types.Bech32HrpToSourceChannelMap
 		ics20TransferMsgServer types.ICS20TransferMsgServer
 		cdc                    codec.Codec
-		storeKey               sdk.StoreKey
-		memKey                 sdk.StoreKey
+		storeKey               storetypes.StoreKey
+		memKey                 storetypes.StoreKey
 	}
 )
 
